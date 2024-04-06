@@ -8,6 +8,11 @@ import java.util.stream.Collectors;
 
 public class ProductManagement {
     private static List<Product> products = new ArrayList<>();
+    static {
+        products.add(new Product(1, "áo quần", "áo đẹp", "áo khá đẹp", 100000, 120000, 120000 - 100000, true));
+        products.add(new Product(2, "giày dép", "áo đẹp", "áo khá đẹp", 90000, 100000, 10000, true));
+        products.add(new Product(3, "cốc", "áo đẹp", "áo khá đẹp", 200000, 220000, 20000, false));
+    }
     public static void main(String[] args) {
         int choice = 0;
 

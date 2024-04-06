@@ -116,13 +116,6 @@ public class Product implements IProduct {
     @Override
     public void displayData() {
         System.out.printf("------------------------------\n");
-        System.out.printf("ID: %d\n", getProductId());
-        System.out.printf("Tên sản phẩm: %s\n", getProductName());
-        System.out.printf("Tiêu đề: %s\n", getTitle());
-        System.out.printf("Descriptions: %s\n", getDescriptions());
-        System.out.printf("Giá nhập vào: %.2fVND\n", getImportPrice());
-        System.out.printf("Giá bán ra: %.2fVND\n", getExportPrice());
-        System.out.printf("Lợi nhuận: %.2fVND\n", getInterest());
-        System.out.printf("Trạng thái: %s\n", isProductStatus() ? "Còn hàng" : "Hết hàng");
+        System.out.printf("ID: %d\nTên sản phẩm: %s\nTiêu đề: %s\nDescriptions: %s\nGiá nhập vào: %.2fVND\nGiá bán ra: %.2fVND\nLợi nhuận: %.2fVND\nTrạng thái: %s\n", getProductId(), getProductName(), getTitle(), getDescriptions(), getImportPrice(), getExportPrice(), getInterest(), isProductStatus() ? "Còn hàng" : "Hết hàng");
     }
 }
